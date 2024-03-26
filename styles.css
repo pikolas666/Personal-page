@@ -1,0 +1,239 @@
+:root {
+	--main-font-color: #e9dfce;
+	--main-background-color: #0d0d11;
+}
+html {
+	font-family: Manrope, sans-serif;
+}
+body {
+	background-color: var(--main-background-color);
+	margin: 0;
+}
+h1 {
+	text-align: center;
+}
+header {
+	height: 100px;
+	background-color: var(--main-background-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 900;
+	color: var(--main-font-color);
+}
+.logo-wrapper {
+	margin-left: 2rem;
+	font-size: 30px;
+}
+.span-text {
+	position: relative;
+	z-index: 2;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.span-shadow {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	z-index: 1;
+	color: var(--main-background-color);
+	text-shadow: -1px -1px 0 var(--main-font-color),
+		1px -1px 0 var(--main-font-color), -1px 1px 0 var(--main-font-color),
+		1px 1px 0 var(--main-font-color);
+}
+nav {
+	display: flex;
+	margin-right: 2rem;
+}
+nav ul {
+	all: unset;
+	display: flex;
+	gap: 15px;
+}
+li {
+	all: unset;
+}
+a {
+	all: unset;
+	cursor: pointer;
+}
+main {
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+
+	height: calc(100vh - 100px);
+}
+
+section {
+	height: calc(100vh - 100px);
+	scroll-snap-align: start;
+}
+.welcome-section {
+	/* scroll-padding-top: 100px; */
+	background-color: var(--main-background-color);
+	position: relative;
+}
+.stripe-container {
+	width: 100%;
+}
+.stripe-container img {
+	height: auto;
+	width: 100%;
+	object-fit: cover;
+	opacity: 50%;
+}
+.about-me {
+	background-color: var(--main-background-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.paragraph {
+	color: var(--main-font-color);
+	margin-left: 2rem;
+	margin-right: 2rem;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	color: var(--main-font-color);
+	font-size: 40px;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%, -50%);
+}
+/* scrollbar */
+/* For Webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+	width: 50px !important;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #ffffff;
+}
+
+/* For Firefox */
+html {
+	scrollbar-width: medium;
+}
+
+/* Color of the scrollbar handle */
+html {
+	scrollbar-color: var(--main-font-color) var(--main-background-color);
+}
+/* 
+sliding welcome */
+
+@keyframes slideFromLeft {
+	from {
+		transform: translateX(-400px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideFromRight {
+	from {
+		transform: translateX(400px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+#hey,
+#name {
+	position: absolute;
+}
+
+#hey {
+	animation: slideFromLeft 1.5s ease forwards;
+}
+
+#name {
+	top: 100px;
+	animation: slideFromRight 1.5s ease forwards;
+}
+.experience-container {
+	padding-bottom: 2rem;
+}
+.experience {
+	height: auto;
+	background-color: var(--main-background-color);
+	color: var(--main-font-color);
+}
+.experience-card {
+	border-top: 2px solid var(--main-font-color);
+	width: 70%;
+	margin: auto;
+}
+.date {
+	display: flex;
+	gap: 1rem;
+}
+.year {
+	font-size: 80px;
+	display: inline-block;
+	background-image: linear-gradient(to bottom, var(--main-font-color), #7a7a7a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.month {
+	font-size: 40px;
+	display: flex;
+	background-image: linear-gradient(to bottom, var(--main-font-color), #7a7a7a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	align-items: center;
+}
+.title {
+	display: flex;
+	color: #ffffff;
+}
+
+.stack {
+	background-color: var(--main-background-color);
+	color: var(--main-font-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stack-container {
+	width: 70%;
+}
+.stack-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.stack-name {
+	display: flex;
+	padding: 10px 13px;
+	border: 1px solid #eae9e9;
+	color: #eae9e9;
+	border-radius: 200px;
+	font-weight: 600;
+}
