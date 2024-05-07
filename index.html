@@ -15,16 +15,33 @@
 						<span class="span-shadow">G R</span></a
 					>
 				</div>
+				<div class="burger-container">
+					<div class="burger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
 				<nav>
 					<ul>
 						<li><a href="#about">About me</a></li>
 						<li><a href="#experience">Experience</a></li>
 						<li><a href="#stack">Stack</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
-			<main data-simplebar>
+			<div class="mobile-nav">
+				<ul>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#stack">Stack</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<main>
 				<section id="welcome" class="welcome-section">
 					<div class="welcome">
 						<div id="hey"><em>Hey, I'm</em></div>
@@ -188,8 +205,53 @@
 						</div>
 					</div>
 				</section>
-				<section id="contact" class="contact"></section>
+				<section id="portfolio" class="portfolio">
+					<h1>Portfolio</h1>
+					<div class="portfolio-wrapper">
+						<div class="portfolio-card">
+							<a href="https://transport-woad.vercel.app/" target="_blank"
+								><img src="./pictures/transport.PNG"
+							/></a>
+							<h4>Transport calculator app</h4>
+							<p>My first project that I started before joining 6-month CodeAcademy`s courses. Finished it once I gained more experience after the courses.<br>
+								CSS3, HTML5, Javascript, NodeJs and MongoDB.
+							</p>
+						</div>
+						<div class="portfolio-card">
+							<a
+								href="https://final-project-front-end-six.vercel.app/"
+								target="_blank"
+								><img src="./pictures/stackoverflow.PNG"
+							/></a>
+							<h4>Final exam practical task - StackOverflow</h4>
+							<p>My final exam practical task at CodeAcademy - StackOverflow similar website.<br>
+								CSS3, HTML5, Javascript, TypeScript, React, NodeJs and MongoDB.	</p>
+						</div>
+						<div class="portfolio-card">
+							<a href="https://www.tariote.lt/" target="_blank"
+								><img src="./pictures/tariote.PNG"
+							/></a>
+							<h4>Tariote.lt</h4>
+							<p>My hobby project with CMS deployed on Firebase. You have to be logged in to see the full content management potential.<br>
+								CSS3, HTML5, Javascript, TypeScript, React and Firebase.</p>
+						</div>
+						<div class="portfolio-card">
+							<a href="https://www.akiniai-pigiau.lt/" target="_blank"
+								><img src="./pictures/akiniaipigiau.PNG"
+							/></a>
+							<h4>Akiniai-pigiau.lt</h4>
+							<p>A fully functioning online store made with Shopify. Has some custom CSS.</p>
+						</div>
+				</section>
+				<section id="contact" class="contact">
+					<h1>Contact</h1>
+					<div class="contacts-wrapper">
+						<div class="email">Email: ridikas.gintautas@gmail.com</div>
+						<a href="https://www.linkedin.com/in/gintautas-ridikas-9b3b81a5/" target="_blank"><div class="linkedIn">LinkedIn: https://www.linkedin.com/in/gintautas-ridikas-9b3b81a5/</div></a>
+					</div>
+				</section>
 			</main>
 		</div>
+	<script src="./script.js"></script>	
 	</body>
 </html>
